@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pirewall-shared"
+version = "0.1.0"
+description = "Shared components for the pirewall project"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "pirewall Team"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    # Add project dependencies here
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=21.0",
+    "flake8>=3.8",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pirewall/pirewall-shared"
+"Repository" = "https://github.com/pirewall/pirewall-shared"
